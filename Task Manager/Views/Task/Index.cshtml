@@ -1,0 +1,30 @@
+﻿@model List<Task_Manager.Models.Task>
+
+<h1>Task List</h1>
+
+<a asp-action="Create" class="btn btn-primary">Add New Task</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Done</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <td>@task.Title</td>
+                <td>@task.Description</td>
+                <td>@(task.IsDone ? "Yes" : "No")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@task.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@task.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
