@@ -21,3 +21,40 @@ Data is stored **in memory** within the application, so all tasks will be lost w
 To access the Task Manager pages, you need to append `/Task` to the base URL.
 
 For example:  
+https://localhost:5001/Task
+
+## 🔧 How to Run the Application:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/TaskManagerMvc.git
+    ```
+2. Open the project in Visual Studio.
+3. Run the application using IIS Express.
+4. Navigate to `https://localhost:5001/Task` (or your local port) to use the Task Manager.
+
+## 📂 Project Structure:
+Controllers/
+TaskController.cs
+Models/
+Task.cs
+Services/
+TaskService.cs
+Views/
+Task/
+Create.cshtml
+Edit.cshtml
+Index.cshtml
+Delete.cshtml
+wwwroot/
+Program.cs
+
+## 💡 What I Learned:
+- Implementing CRUD operations in ASP.NET Core MVC.
+- Using Dependency Injection to manage services.
+- Working with in-memory data storage for simplicity.
+- Understanding routing and linking in MVC.
+- Basic form validation and model binding.
+
+---
+
+This project is intended as a learning exercise for ASP.NET Core MVC CRUD functionality and service usage.
