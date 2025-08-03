@@ -26,7 +26,7 @@ https://localhost:5001/Task
 ## 🔧 How to Run the Application:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/TaskManagerMvc.git
+    git clone https://github.com/devdimitrijes/TaskManagerMvc.git
     ```
 2. Open the project in Visual Studio.
 3. Run the application using IIS Express.
